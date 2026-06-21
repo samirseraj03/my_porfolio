@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "about": "Sobre mi",
+    "education": "Educació",
+    "projects": "Projectes",
+    "skills": "Habilitats",
+    "contact": "Contacte"
+  },
+  "hero": {
+    "greeting": "Hola, soc Samir Seraj",
+    "role": "Desenvolupador Web i Estudiant d'Economia",
+    "description": "Unint la lògica de negoci i l'enginyeria de programari per crear solucions eficients i orientades a resultats."
+  },
+  "education": {
+    "title": "Educació",
+    "description": "La meva formació és un pont entre la lògica de negoci i l'enginyeria de programari. A través dels meus estudis en Sistemes, Xarxes i Desenvolupament Web, he après a construir i desplegar aplicacions robustes. Ara, amb el Grau en Economia, integro l'anàlisi estadístic, l'econometria i l'optimització matemàtica per interpretar dades complexes, avaluar la viabilitat empresarial i desenvolupar solucions tecnològiques orientades a maximitzar beneficis i optimitzar costos.",
+    "items": {
+      "eco": {
+        "title": "Grau en Economia",
+        "institution": "Universitat de Girona (UdG)",
+        "period": "Actualitat (2n Any)",
+        "desc": "Enfocament analític en microeconomia, macroeconomia i viabilitat empresarial. Aplicació de models economètrics, matemàtics i estadístics per interpretar dades, predir escenaris, optimitzar costos i maximitzar beneficis amb fonaments sòlids.",
+        "h1": "Anàlisi i interpretació de dades per a la presa de decisions empresarials",
+        "h2": "Optimització matemàtica de costos i beneficis (Micro/Macroeconomia)",
+        "h3": "Econometria: modelatge estadístic per a validació de teories i predicció"
+      },
+      "daw": {
+        "title": "Tècnic Superior en Desenvolupament d'Aplicacions Web (DAW)",
+        "institution": "Cicle Formatiu de Grau Superior",
+        "period": "Completat",
+        "desc": "Especialització tècnica en l'arquitectura, creació i desplegament de programari. Desenvolupament de solucions completes multiplataforma, integrant tant la lògica de servidor com interfícies d'usuari interactives.",
+        "h1": "Desenvolupament i desplegament d'aplicacions Full-Stack",
+        "h2": "Creació d'APIs RESTful i gestió de bases de dades relacionals i NoSQL",
+        "h3": "Fluxos de treball col·laboratius i control de versions"
+      },
+      "smr": {
+        "title": "Tècnic en Sistemes Microinformàtics i Xarxes (SMR)",
+        "institution": "Cicle Formatiu de Grau Mitjà",
+        "period": "Completat",
+        "desc": "Base sòlida en infraestructura i maquinari. Administració d'entorns operatius, estructuració de xarxes locals i fonaments de seguretat per mantenir la continuïtat del sistema.",
+        "h1": "Instal·lació, configuració i administració d'entorns Linux (Ubuntu) i macOS",
+        "h2": "Disseny, configuració i manteniment de xarxes locals (LAN)",
+        "h3": "Gestió de maquinari i suport tècnic preventiu"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projectes Destacats",
+    "mapfont_desc": "Aplicació mòbil publicada a la Google Play Store per al mapatge i gestió de fonts. Gestió completa del cicle de desplegament incloent l'empaquetament i signat de recursos.",
+    "workspace_desc": "Eina de gestió d'espais de treball estil macOS. En maximitzar o posar en pantalla completa una finestra, la mou automàticament a un nou espai de treball dedicat a la dreta.",
+    "dataapi_desc": "Motor de simulació de dades d'alt rendiment exposat com a API REST pública. Construït per generar, provar i modelar estructures de dades complexes de manera eficient.",
+    "encuestas_desc": "Sistema de backend privat desenvolupat per recopilar, processar i gestionar dades dinàmiques d'enquestes de manera eficient i segura.",
+    "bowling_desc": "Implementació algorísmica de la lògica tradicional d'un joc de bitlles, incloent-hi càlculs precisos de rondes, strikes i spares.",
+    "parking_desc": "Solució de programari integral dissenyada per gestionar la logística d'aparcaments, controlant l'entrada/sortida de vehicles i la capacitat."
+  },
+  "skills": {
+    "title": "Habilitats i Experiència",
+    "cat_databases": "Bases de Dades",
+    "cat_data_eco": "Data & Economia",
+    "cat_soft": "Soft Skills",
+    "s_econometrics": "Econometria",
+    "s_viability": "Anàlisi de Viabilitat",
+    "s_micro_macro": "Micro & Macroeconomia",
+    "s_discipline": "Disciplina",
+    "s_adaptability": "Adaptabilitat",
+    "s_creativity": "Creativitat"
+  },
+  "contact": {
+    "title": "Posa't en Contacte",
+    "desc": "Sempre m'interessa escoltar sobre nous projectes i oportunitats. Tant si tens una pregunta com si només vols saludar, no dubtis en escriure'm!"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "education": "Educación",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy Samir Seraj",
+    "role": "Desarrollador Web y Estudiante de Economía",
+    "description": "Uniendo la lógica de negocio y la ingeniería de software para crear soluciones eficientes y orientadas a resultados."
+  },
+  "education": {
+    "title": "Educación",
+    "description": "Mi formación es un puente entre la lógica de negocio y la ingeniería de software. A través de mis estudios en Sistemas, Redes y Desarrollo Web, aprendí a construir y desplegar aplicaciones robustas. Ahora, con el Grado en Economía, integro el análisis estadístico, la econometría y la optimización matemática para interpretar datos complejos, evaluar la viabilidad empresarial y desarrollar soluciones tecnológicas orientadas a maximizar beneficios y optimizar costes.",
+    "items": {
+      "eco": {
+        "title": "Grado en Economía",
+        "institution": "Universitat de Girona (UdG)",
+        "period": "Actualidad (2º Año)",
+        "desc": "Enfoque analítico en microeconomía, macroeconomía y viabilidad empresarial. Aplicación de modelos econométricos, matemáticos y estadísticos para interpretar datos, predecir escenarios, optimizar costes y maximizar beneficios con fundamentos sólidos.",
+        "h1": "Análisis e interpretación de datos para la toma de decisiones empresariales",
+        "h2": "Optimización matemática de costes y beneficios (Micro/Macroeconomía)",
+        "h3": "Econometría: modelado estadístico para validación de teorías y predicción"
+      },
+      "daw": {
+        "title": "Técnico Superior en Desarrollo de Aplicaciones Web (DAW)",
+        "institution": "Ciclo Formativo de Grado Superior",
+        "period": "Completado",
+        "desc": "Especialización técnica en la arquitectura, creación y despliegue de software. Desarrollo de soluciones completas multiplataforma, integrando tanto la lógica de servidor como interfaces de usuario interactivas.",
+        "h1": "Desarrollo y despliegue de aplicaciones Full-Stack",
+        "h2": "Creación de APIs RESTful y gestión de bases de datos relacionales y NoSQL",
+        "h3": "Flujos de trabajo colaborativos y control de versiones"
+      },
+      "smr": {
+        "title": "Técnico en Sistemas Microinformáticos y Redes (SMR)",
+        "institution": "Ciclo Formativo de Grado Medio",
+        "period": "Completado",
+        "desc": "Base sólida en infraestructura y hardware. Administración de entornos operativos, estructuración de redes locales y fundamentos de seguridad para mantener la continuidad del sistema.",
+        "h1": "Instalación, configuración y administración de entornos Linux (Ubuntu) y macOS",
+        "h2": "Diseño, configuración y mantenimiento de redes locales (LAN)",
+        "h3": "Gestión de hardware y soporte técnico preventivo"
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "mapfont_desc": "Aplicación móvil publicada en Google Play Store para mapeo y gestión de fuentes. Manejo completo del ciclo de despliegue incluyendo empaquetado y firmado de recursos.",
+    "workspace_desc": "Herramienta de gestión de espacios de trabajo estilo macOS. Al maximizar o poner en pantalla completa una ventana, la mueve automáticamente a un nuevo espacio de trabajo dedicado a la derecha.",
+    "dataapi_desc": "Motor de simulación de datos de alto rendimiento expuesto como una API REST pública. Construido para generar, probar y modelar estructuras de datos complejas de manera eficiente.",
+    "encuestas_desc": "Sistema de backend privado desarrollado para recolectar, procesar y gestionar datos dinámicos de encuestas de manera eficiente y segura.",
+    "bowling_desc": "Implementación algorítmica de la lógica tradicional de un juego de bolos, incluyendo cálculos precisos de rondas, strikes y spares.",
+    "parking_desc": "Solución de software integral diseñada para gestionar la logística de aparcamientos, controlando la entrada/salida de vehículos y la capacidad."
+  },
+  "skills": {
+    "title": "Habilidades y Experiencia",
+    "cat_databases": "Bases de Datos",
+    "cat_data_eco": "Data & Economía",
+    "cat_soft": "Soft Skills",
+    "s_econometrics": "Econometría",
+    "s_viability": "Análisis de Viabilidad",
+    "s_micro_macro": "Micro & Macroeconomía",
+    "s_discipline": "Disciplina",
+    "s_adaptability": "Adaptabilidad",
+    "s_creativity": "Creatividad"
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "desc": "Siempre me interesa escuchar sobre nuevos proyectos y oportunidades. Tanto si tienes una pregunta como si solo quieres saludar, ¡no dudes en escribirme!"
+  }
+}

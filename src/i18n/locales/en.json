@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "about": "About",
+    "education": "Education",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Samir Seraj",
+    "role": "Web Developer and Economics Student",
+    "description": "Bridging business logic and software engineering to create efficient, results-driven solutions."
+  },
+  "education": {
+    "title": "Education",
+    "description": "My background is a bridge between business logic and software engineering. Through my studies in Systems, Networks, and Web Development, I learned to build and deploy robust applications. Now, with a Degree in Economics, I integrate statistical analysis, econometrics, and mathematical optimization to interpret complex data, assess business viability, and develop technological solutions aimed at maximizing profits and optimizing costs.",
+    "items": {
+      "eco": {
+        "title": "Degree in Economics",
+        "institution": "Universitat de Girona (UdG)",
+        "period": "Current (2nd Year)",
+        "desc": "Analytical approach in microeconomics, macroeconomics, and business viability. Application of econometric, mathematical, and statistical models to interpret data, predict scenarios, optimize costs, and maximize profits with solid foundations.",
+        "h1": "Data analysis and interpretation for business decision-making",
+        "h2": "Mathematical optimization of costs and profits (Micro/Macroeconomics)",
+        "h3": "Econometrics: statistical modeling for theory validation and prediction"
+      },
+      "daw": {
+        "title": "Higher Technician in Web Application Development (DAW)",
+        "institution": "Higher Vocational Training",
+        "period": "Completed",
+        "desc": "Technical specialization in software architecture, creation, and deployment. Development of complete cross-platform solutions, integrating both server-side logic and interactive user interfaces.",
+        "h1": "Development and deployment of Full-Stack applications",
+        "h2": "Creation of RESTful APIs and management of relational and NoSQL databases",
+        "h3": "Collaborative workflows and version control"
+      },
+      "smr": {
+        "title": "Technician in Microcomputer Systems and Networks (SMR)",
+        "institution": "Intermediate Vocational Training",
+        "period": "Completed",
+        "desc": "Solid foundation in infrastructure and hardware. Administration of operating environments, local network structuring, and security fundamentals to maintain system continuity.",
+        "h1": "Installation, configuration, and administration of Linux (Ubuntu) and macOS environments",
+        "h2": "Design, configuration, and maintenance of local area networks (LAN)",
+        "h3": "Hardware management and preventive technical support"
+      }
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "mapfont_desc": "Mobile application deployed on the Google Play Store for mapping and font management. Handled complete deployment lifecycle including asset bundling and signing.",
+    "workspace_desc": "macOS-style workspace management tool. Maximizing or fullscreening a window automatically moves it to a dedicated new workspace on the right.",
+    "dataapi_desc": "High-performance data simulation engine exposed as a public REST API. Built to efficiently generate, test, and model complex data structures.",
+    "encuestas_desc": "Private backend system developed to collect, process, and manage dynamic survey data efficiently and securely.",
+    "bowling_desc": "Algorithmic implementation of a traditional bowling game's logic, including precise frame calculation, strikes, and spares scoring systems.",
+    "parking_desc": "Comprehensive software solution designed to manage parking lot logistics, tracking vehicle entries/exits, and handling capacity management."
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "cat_databases": "Databases",
+    "cat_data_eco": "Data & Economics",
+    "cat_soft": "Soft Skills",
+    "s_econometrics": "Econometrics",
+    "s_viability": "Viability Analysis",
+    "s_micro_macro": "Micro & Macroeconomics",
+    "s_discipline": "Discipline",
+    "s_adaptability": "Adaptability",
+    "s_creativity": "Creativity"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "desc": "I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!"
+  }
+}
