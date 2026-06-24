@@ -38,7 +38,7 @@ const NavContainer = styled(motion.nav)`
   }
 `;
 
-const NavDot = styled(motion.button)<{ active: boolean }>`
+const NavDot = styled(motion.button) <{ active: boolean }>`
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -142,10 +142,10 @@ const ProgressBar = styled(motion.div)`
 // Sections moved inside component for translation
 export const FloatingNav = () => {
   const { t } = useTranslation();
-  const [activeSection, setActiveSection] = useState('hero');
+  const [activeSection, setActiveSection] = useState('about');
 
   const sections = [
-    { id: 'hero', name: t('nav.home') },
+    { id: 'about', name: t('nav.home') },
     { id: 'education', name: t('nav.education') },
     { id: 'projects', name: t('nav.projects') },
     { id: 'skills', name: t('nav.skills') },
@@ -162,7 +162,7 @@ export const FloatingNav = () => {
   useEffect(() => {
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
-      
+
       // Find which section is currently in view
       sections.forEach(({ id, name }) => {
         const element = document.getElementById(id);
@@ -191,10 +191,10 @@ export const FloatingNav = () => {
     } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
       e.preventDefault();
       const currentIndex = sections.findIndex(({ id }) => id === sectionId);
-      const nextIndex = e.key === 'ArrowUp' 
+      const nextIndex = e.key === 'ArrowUp'
         ? Math.max(0, currentIndex - 1)
         : Math.min(sections.length - 1, currentIndex + 1);
-      
+
       const nextSection = sections[nextIndex];
       document.getElementById(nextSection.id)?.scrollIntoView({ behavior: 'smooth' });
     }
@@ -202,18 +202,18 @@ export const FloatingNav = () => {
 
   return (
     <>
-      <ProgressBar 
-        style={{ scaleX }} 
-        role="progressbar" 
+      <ProgressBar
+        style={{ scaleX }}
+        role="progressbar"
         aria-label="Reading progress"
         aria-valuemin={0}
         aria-valuemax={100}
         aria-valuenow={Math.round(scrollYProgress.get() * 100)}
       />
-      <div 
-        id="section-announcer" 
-        className="sr-only" 
-        role="status" 
+      <div
+        id="section-announcer"
+        className="sr-only"
+        role="status"
         aria-live="polite"
       />
       <NavContainer
