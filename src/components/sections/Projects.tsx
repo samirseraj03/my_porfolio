@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { theme } from '../../styles/theme';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import Palmira from '../../assets/palmira.webp';
+import Eutorus from '../../assets/eutorus.webp';
 
 const ProjectsSection = styled.section`
   min-height: 100vh;
@@ -188,7 +190,7 @@ const Projects = () => {
       image: "https://play-lh.googleusercontent.com/9dKelmL9quPe32a7DyqP_sHJaL93J7B3X3KTWrYrBwU9Q_sjjPxwSVJ4K3dVqMWfW1GnZSqDZ2devjgTxRDASCY=w480-h960-rw",
       techStack: ["Ionic", "Angular", "Android", "Mobile App", "Mapbox", "Capacitor"],
       githubUrl: "https://github.com/samirseraj03/mapfont",
-      liveUrl: "https://play.google.com",
+      liveUrl: "https://map-font.vercel.app/tabs/fonts",
     },
     {
       id: 2,
@@ -224,7 +226,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1511516104860-264663d231de?auto=format&fit=crop&q=80&w=400",
       techStack: ["Software Engineering", "Algorithms", "OOP", "Unity"],
       githubUrl: "https://github.com/samirseraj03/bowling",
-      liveUrl: "#",
+      liveUrl: "https://samirseraj03.github.io/bowling/",
     },
     {
       id: 6,
@@ -234,6 +236,26 @@ const Projects = () => {
       techStack: ["Management System", "Logistics", "Full-stack", "Python"],
       githubUrl: "https://github.com/samirseraj03/Gestio_parking",
       liveUrl: "#",
+    },
+
+    {
+      id: 7,
+      title: "Eutorus.com",
+      description: t('projects.eutorus_desc'),
+      image: Eutorus,
+      techStack: ["WordPress", "Web Design", "SEO", "Optimization"],
+      githubUrl: "#",
+      liveUrl: "https://eutorus.com",
+    },
+
+    {
+      id: 8,
+      title: "Sabores Palmira",
+      description: t('projects.sabores_desc'),
+      image: Palmira,
+      techStack: ["WordPress", "Web Design", "Local SEO", "Digital Catalog"],
+      githubUrl: "#",
+      liveUrl: "https://saborespalmira.com",
     }
   ];
 

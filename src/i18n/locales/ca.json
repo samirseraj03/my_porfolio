@@ -51,7 +51,9 @@
     "dataapi_desc": "Motor de simulació de dades d'alt rendiment exposat com a API REST pública. Construït per generar, provar i modelar estructures de dades complexes de manera eficient.",
     "encuestas_desc": "Sistema de backend privat desenvolupat per recopilar, processar i gestionar dades dinàmiques d'enquestes de manera eficient i segura.",
     "bowling_desc": "Implementació algorísmica de la lògica tradicional d'un joc de bitlles, incloent-hi càlculs precisos de rondes, strikes i spares.",
-    "parking_desc": "Solució de programari integral dissenyada per gestionar la logística d'aparcaments, controlant l'entrada/sortida de vehicles i la capacitat."
+    "parking_desc": "Solució de programari integral dissenyada per gestionar la logística d'aparcaments, controlant l'entrada/sortida de vehicles i la capacitat.",
+    "eutorus_desc": "Disseny, desenvolupament i optimització de la pàgina web corporativa d'Eutorus, una empresa real. Desenvolupada a mida sobre WordPress amb enfocament en rendiment, SEO i experiència d'usuari.",
+    "sabores_desc": "Lloc web corporatiu i catàleg digital per a Sabores Palmira, una empresa real del sector d'alimentació. Implementat a WordPress, optimitzant la visibilitat del seu catàleg i millorant el posicionament local."
   },
   "skills": {
     "title": "Habilitats i Experiència",
@@ -68,5 +70,22 @@
   "contact": {
     "title": "Posa't en Contacte",
     "desc": "Sempre m'interessa escoltar sobre nous projectes i oportunitats. Tant si tens una pregunta com si només vols saludar, no dubtis en escriure'm!"
+  },
+  "chatbot": {
+    "title": "Assistent de Samir",
+    "online": "En línia",
+    "initial": "Hola! 👋 Soc l'assistent virtual de Samir. Em pots fer preguntes sobre la seva experiència, habilitats i projectes. Fes clic a qualsevol pregunta de sota!",
+    "q1": "👋 Qui és Samir?",
+    "a1": "Hola! Samir Seraj és un desenvolupador de programari i estudiant d'Economia a la Universitat de Girona. Combina la lògica de negoci amb l'enginyeria de programari per crear solucions eficients i orientades a resultats.",
+    "q2": "💻 Quines tecnologies domina?",
+    "a2": "Samir treballa amb un stack molt variat: en Frontend usa React, Angular i TypeScript; en Mobile, Flutter, Ionic i Capacitor; en Backend, Laravel, Node.js, FastAPI, Django i Python; i en Bases de Dades, PostgreSQL, MySQL, MongoDB, Supabase i Firebase. També gestiona Docker, Git, Google Cloud i Azure.",
+    "q3": "🎓 Què ha estudiat?",
+    "a3": "Té un Grau Superior en Desenvolupament d'Aplicacions Web (DAW), un Grau Mitjà en Sistemes Microinformàtics i Xarxes (SMR), i actualment cursa el Grau en Economia a la UdG, on aplica econometria i anàlisi estadístic.",
+    "q4": "🚀 Quins són els seus projectes?",
+    "a4": "Entre els seus projectes destaquen MapFont (app mòbil publicada a Google Play), Workspace-Roundtrip (extensió de gestió d'escriptoris per a Ubuntu), DataSimulation API (motor de simulació de dades amb FastAPI), i d'altres. Pots veure'ls a la secció de Projectes.",
+    "q5": "📊 Sap de dades i economia?",
+    "a5": "Sí, Samir combina els seus coneixements tècnics amb anàlisi de dades usant R, Pandas i Power BI. A més, com a estudiant d'Economia, domina l'econometria, l'anàlisi de viabilitat empresarial i models micro/macroeconòmics.",
+    "q6": "📧 Com hi contacto?",
+    "a6": "Pots contactar amb Samir a través del seu correu samirseraj03@gmail.com, a LinkedIn (linkedin.com/in/samirseraj) o a GitHub (github.com/samirseraj03). També pots fer servir la secció de Contacte d'aquest portafoli."
   }
 }

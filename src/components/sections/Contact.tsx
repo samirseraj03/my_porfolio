@@ -191,7 +191,7 @@ const Contact = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <SectionTitle 
+          <SectionTitle
             variants={itemVariants}
             role="heading"
             aria-level={2}
@@ -199,29 +199,29 @@ const Contact = () => {
             {t('contact.title')}
           </SectionTitle>
           <ContactContent role="article">
-            <ContactText 
+            <ContactText
               variants={itemVariants}
               role="paragraph"
             >
               {t('contact.desc')}
             </ContactText>
-            <ContactEmail 
-              href="mailto:your.email@example.com"
+            <ContactEmail
+              href="mailto:samirseraj03@gmail.com"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              aria-label="Send me an email at your.email@example.com"
+              aria-label="Send me an email at samirseraj03@gmail.com"
             >
               <FaEnvelope aria-hidden="true" />
-              <span>your.email@example.com</span>
+              <span>samirseraj03@gmail.com</span>
             </ContactEmail>
-            <SocialLinks 
+            <SocialLinks
               variants={itemVariants}
               role="list"
               aria-label="Social media links"
             >
-              <SocialLink 
-                href="https://github.com"
+              <SocialLink
+                href="https://github.com/samirseraj03"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
@@ -231,8 +231,8 @@ const Contact = () => {
                 <FaGithub aria-hidden="true" />
                 <span className="sr-only">GitHub</span>
               </SocialLink>
-              <SocialLink 
-                href="https://linkedin.com"
+              <SocialLink
+                href="https://linkedin.com/in/samirseraj"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
@@ -242,8 +242,8 @@ const Contact = () => {
                 <FaLinkedin aria-hidden="true" />
                 <span className="sr-only">LinkedIn</span>
               </SocialLink>
-              <SocialLink 
-                href="https://twitter.com"
+              <SocialLink
+                href="https://twitter.com/serajsamir"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
@@ -257,7 +257,7 @@ const Contact = () => {
           </ContactContent>
         </motion.div>
       </div>
-    </ContactSection>
+    </ContactSection >
   );
 };
 

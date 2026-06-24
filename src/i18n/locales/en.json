@@ -51,7 +51,9 @@
     "dataapi_desc": "High-performance data simulation engine exposed as a public REST API. Built to efficiently generate, test, and model complex data structures.",
     "encuestas_desc": "Private backend system developed to collect, process, and manage dynamic survey data efficiently and securely.",
     "bowling_desc": "Algorithmic implementation of a traditional bowling game's logic, including precise frame calculation, strikes, and spares scoring systems.",
-    "parking_desc": "Comprehensive software solution designed to manage parking lot logistics, tracking vehicle entries/exits, and handling capacity management."
+    "parking_desc": "Comprehensive software solution designed to manage parking lot logistics, tracking vehicle entries/exits, and handling capacity management.",
+    "eutorus_desc": "Design, development, and optimization of the corporate website for Eutorus, a real company. Custom-built on WordPress with a focus on performance, SEO, and user experience.",
+    "sabores_desc": "Corporate website and digital catalog for Sabores Palmira, a real food sector company. Implemented on WordPress, optimizing catalog visibility and improving local SEO."
   },
   "skills": {
     "title": "Skills & Expertise",
@@ -68,5 +70,22 @@
   "contact": {
     "title": "Get In Touch",
     "desc": "I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!"
+  },
+  "chatbot": {
+    "title": "Samir's Assistant",
+    "online": "Online",
+    "initial": "Hi! 👋 I'm Samir's virtual assistant. You can ask me questions about his experience, skills, and projects. Click on any question below!",
+    "q1": "👋 Who is Samir?",
+    "a1": "Hi! Samir Seraj is a software developer and Economics student at the University of Girona. He combines business logic with software engineering to create efficient, results-oriented solutions.",
+    "q2": "💻 What technologies does he use?",
+    "a2": "Samir works with a diverse stack: Frontend (React, Angular, TypeScript), Mobile (Flutter, Ionic, Capacitor), Backend (Laravel, Node.js, FastAPI, Django, Python), and Databases (PostgreSQL, MySQL, MongoDB, Supabase, Firebase). He also uses Docker, Git, Google Cloud, and Azure.",
+    "q3": "🎓 What has he studied?",
+    "a3": "He holds a Higher Degree in Web Application Development (DAW), an Intermediate Degree in Microcomputer Systems and Networks (SMR), and is currently studying Economics at UdG, applying econometrics and statistical analysis.",
+    "q4": "🚀 What are his projects?",
+    "a4": "His featured projects include MapFont (a mobile app published on Google Play), Workspace-Roundtrip (a desktop management extension for Ubuntu), DataSimulation API (a high-performance data simulation engine), among others. You can view them in the Projects section.",
+    "q5": "📊 Does he know about data and economics?",
+    "a5": "Yes, Samir combines his technical knowledge with data analysis using R, Pandas, and Power BI. As an Economics student, he also handles econometrics, business viability analysis, and micro/macroeconomic models.",
+    "q6": "📧 How can I contact him?",
+    "a6": "You can contact Samir via email at samirseraj03@gmail.com, on LinkedIn (linkedin.com/in/samirseraj) or GitHub (github.com/samirseraj03). You can also use the Contact section at the bottom of this portfolio."
   }
 }

@@ -3,6 +3,11 @@ import { theme } from '../../styles/theme';
 import { keyframes } from '@emotion/react';
 import { lazy, Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
+import profileImg from '../../assets/1728469481773.jpeg';
+import cvEs from '../../assets/Español (1).pdf';
+import cvEn from '../../assets/(Inglés) (1).pdf';
+import cvCa from '../../assets/(Catalán) (1).pdf';
+
 const FaGithub = lazy(() => import('react-icons/fa').then(mod => ({ default: mod.FaGithub })));
 const FaLinkedin = lazy(() => import('react-icons/fa').then(mod => ({ default: mod.FaLinkedin })));
 const FaEnvelope = lazy(() => import('react-icons/fa').then(mod => ({ default: mod.FaEnvelope })));
@@ -41,9 +46,16 @@ const HeroContent = styled.div`
   border-radius: 20px;
   padding: ${theme.spacing.lg};
   border: none;
+  
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: ${theme.spacing.xl};
 
   @media (min-width: ${theme.breakpoints.md}) {
     padding: ${theme.spacing.xl};
+    flex-direction: row;
+    justify-content: space-between;
   }
 `;
 
@@ -87,6 +99,53 @@ const Description = styled.p`
   line-height: 1.7;
 `;
 
+const ImageContainer = styled.div`
+  flex-shrink: 0;
+  animation: ${fadeUpKeyframes} 0.5s ease-out forwards;
+  
+  img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid ${theme.colors.accent};
+    box-shadow: 0 8px 32px rgba(246, 177, 122, 0.3);
+    
+    @media (min-width: ${theme.breakpoints.md}) {
+      width: 300px;
+      height: 300px;
+    }
+  }
+`;
+
+const ActionButtons = styled.div`
+  animation: ${fadeUpKeyframes} 0.5s ease-out 0.6s forwards;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  gap: ${theme.spacing.md};
+  flex-wrap: wrap;
+`;
+
+const ResumeButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: ${theme.colors.accent};
+  color: ${theme.colors.textDark};
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all ${theme.transitions.default};
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(246, 177, 122, 0.4);
+    background: ${theme.colors.light};
+  }
+`;
+
 const SocialLinks = styled.div`
   animation: ${fadeUpKeyframes} 0.5s ease-out 0.6s forwards;
   opacity: 0;
@@ -122,7 +181,20 @@ const SocialLinks = styled.div`
 `;
 
 export const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const currentLang = i18n.language || 'es';
+  const getCvInfo = () => {
+    if (currentLang.startsWith('en')) {
+      return { href: cvEn, text: 'Download CV' };
+    }
+    if (currentLang.startsWith('ca')) {
+      return { href: cvCa, text: 'Descarregar CV' };
+    }
+    return { href: cvEs, text: 'Descargar CV' };
+  };
+
+  const cvInfo = getCvInfo();
 
   return (
     <HeroSection id="hero" role="region" aria-label="Introduction">
@@ -138,43 +210,54 @@ export const Hero = () => {
             <Description role="paragraph">
               {t('hero.description')}
             </Description>
-            <SocialLinks role="list" aria-label="Social media links">
-              <a
-                href="https://github.com/samirsamirseraj03"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit my GitHub profile"
-                role="listitem"
-              >
-                <Suspense fallback={<div style={{ width: '1.5rem', height: '1.5rem' }} />}>
-                  <FaGithub aria-hidden="true" />
-                </Suspense>
-                <span className="sr-only">GitHub</span>
-              </a>
-              <a
-                href="https://linkedin.com/in/samirseraj"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit my LinkedIn profile"
-                role="listitem"
-              >
-                <Suspense fallback={<div style={{ width: '1.5rem', height: '1.5rem' }} />}>
-                  <FaLinkedin aria-hidden="true" />
-                </Suspense>
-                <span className="sr-only">LinkedIn</span>
-              </a>
-              <a
-                href="mailto:samirseraj03@gmail.com"
-                aria-label="Send me an email"
-                role="listitem"
-              >
-                <Suspense fallback={<div style={{ width: '1.5rem', height: '1.5rem' }} />}>
-                  <FaEnvelope aria-hidden="true" />
-                </Suspense>
-                <span className="sr-only">Email</span>
-              </a>
-            </SocialLinks>
+            <ActionButtons>
+              <ResumeButton href={cvInfo.href} download={`CV_Samir_Seraj_${currentLang.toUpperCase()}.pdf`}>
+                {cvInfo.text}
+              </ResumeButton>
+              <SocialLinks role="list" aria-label="Social media links">
+                <a
+                  href="https://github.com/samirsamirseraj03"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit my GitHub profile"
+                  role="listitem"
+                >
+                  <Suspense fallback={<div style={{ width: '1.5rem', height: '1.5rem' }} />}>
+                    <FaGithub aria-hidden="true" />
+                  </Suspense>
+                  <span className="sr-only">GitHub</span>
+                </a>
+                <a
+                  href="https://linkedin.com/in/samirseraj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit my LinkedIn profile"
+                  role="listitem"
+                >
+                  <Suspense fallback={<div style={{ width: '1.5rem', height: '1.5rem' }} />}>
+                    <FaLinkedin aria-hidden="true" />
+                  </Suspense>
+                  <span className="sr-only">LinkedIn</span>
+                </a>
+                <a
+                  href="mailto:samirseraj03@gmail.com"
+                  aria-label="Send me an email"
+                  role="listitem"
+                >
+                  <Suspense fallback={<div style={{ width: '1.5rem', height: '1.5rem' }} />}>
+                    <FaEnvelope aria-hidden="true" />
+                  </Suspense>
+                  <span className="sr-only">Email</span>
+                </a>
+              </SocialLinks>
+            </ActionButtons>
           </div>
+          <ImageContainer>
+            <img 
+              src={profileImg} 
+              alt="Samir Seraj" 
+            />
+          </ImageContainer>
         </HeroContent>
       </div>
     </HeroSection>

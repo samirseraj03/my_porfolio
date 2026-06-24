@@ -11,6 +11,7 @@ const Education = lazy(() => import('./components/sections/Education'));
 const Projects = lazy(() => import('./components/sections/Projects'));
 const Skills = lazy(() => import('./components/sections/Skills'));
 const Contact = lazy(() => import('./components/sections/Contact'));
+const Chatbot = lazy(() => import('./components/Chatbot'));
 
 // Loading fallback component
 const LoadingFallback = styled.div`
@@ -48,6 +49,9 @@ function App() {
         </Suspense>
         <Suspense fallback={<LoadingFallback>Loading contact...</LoadingFallback>}>
           <Contact />
+        </Suspense>
+        <Suspense fallback={null}>
+          <Chatbot />
         </Suspense>
       </Layout>
     </ThemeProvider>

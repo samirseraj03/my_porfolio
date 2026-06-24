@@ -118,28 +118,24 @@ const TimelineItem = styled(motion.div) <{ index: number }>`
 
   @media (min-width: ${theme.breakpoints.md}) {
     width: 50%;
-    padding-left: 0;
-    padding-right: 0;
 
-    /* Alternate sides */
     ${(props) =>
     props.index % 2 === 0
       ? `
-      margin-left: 0;
-      padding-right: calc(${theme.spacing.xl} + 20px);
-      text-align: right;
-    `
+          margin-left: 0;
+          padding-right: calc(${theme.spacing.xl} + 40px);
+          padding-left: 0;
+        `
       : `
-      margin-left: 50%;
-      padding-left: calc(${theme.spacing.xl} + 20px);
-      text-align: left;
-    `}
+          margin-left: 50%;
+          padding-left: calc(${theme.spacing.xl} + 40px);
+          padding-right: 0;
+        `}
   }
 `;
 
-const TimelineDot = styled.div`
+const TimelineDot = styled.div<{ index: number }>`
   position: absolute;
-  left: 10px;
   top: 8px;
   width: 22px;
   height: 22px;
@@ -151,6 +147,7 @@ const TimelineDot = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  left: 10px;
 
   &::after {
     content: '';
@@ -161,11 +158,18 @@ const TimelineDot = styled.div`
   }
 
   @media (min-width: ${theme.breakpoints.md}) {
-    left: 0%;
-    transform: translateX(-50%);
+    ${({ index }) =>
+    index % 2 === 0
+      ? `
+          left: 100%;
+          transform: translateX(-50%);
+        `
+      : `
+          left: 0;
+          transform: translateX(-50%);
+        `}
   }
 `;
-
 const TimelineCard = styled.div`
   background: ${theme.colors.glass.background};
   backdrop-filter: blur(12px);
@@ -257,6 +261,7 @@ const HighlightsList = styled.ul`
   text-align: left;
 `;
 
+
 const HighlightItem = styled.li`
   font-size: clamp(0.8rem, 1.3vw, 0.9rem);
   line-height: 1.6;
@@ -264,15 +269,18 @@ const HighlightItem = styled.li`
   padding: 4px 0;
   padding-left: 20px;
   position: relative;
+  text-align: left;
 
   &::before {
     content: '▸';
     position: absolute;
-    left: 0;
+    left: 0;           /* Default: items de la derecha */
+    top: 4px;
     color: ${theme.colors.accent};
     font-size: 0.9em;
   }
 `;
+
 
 const SkillBadgesContainer = styled.div`
   display: flex;
@@ -417,7 +425,7 @@ const Education = () => {
             whileInView="visible"
             viewport={{ once: true, margin: '-50px' }}
           >
-            <TimelineDot />
+            <TimelineDot index={index} />
             <TimelineCard>
               <CardHeader>
                 <IconWrapper aria-hidden="true">{entry.icon}</IconWrapper>
