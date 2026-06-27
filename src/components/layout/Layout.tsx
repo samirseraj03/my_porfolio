@@ -220,7 +220,7 @@ export const Layout = ({ children }: LayoutProps) => {
               Portfolio
             </Logo>
             <NavLinks role="list">
-              <a href="#about" role="listitem" aria-label="About section">{t('nav.about')}</a>
+              <a href="#hero" role="listitem" aria-label="About section">{t('nav.about')}</a>
               <a href="#education" role="listitem" aria-label="Education section">{t('nav.education')}</a>
               <a href="#projects" role="listitem" aria-label="Projects section">{t('nav.projects')}</a>
               <a href="#skills" role="listitem" aria-label="Skills section">{t('nav.skills')}</a>

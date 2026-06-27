@@ -26,10 +26,7 @@ const NavContainer = styled(motion.nav)`
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
-    right: ${theme.spacing.sm};
-    padding: ${theme.spacing.md};
-    gap: ${theme.spacing.lg};
-    background: ${theme.colors.glass.background};
+    display: none;
   }
 
   @media (max-height: 500px) {
@@ -142,10 +139,10 @@ const ProgressBar = styled(motion.div)`
 // Sections moved inside component for translation
 export const FloatingNav = () => {
   const { t } = useTranslation();
-  const [activeSection, setActiveSection] = useState('about');
+  const [activeSection, setActiveSection] = useState('hero');
 
   const sections = [
-    { id: 'about', name: t('nav.home') },
+    { id: 'hero', name: t('nav.about') },
     { id: 'education', name: t('nav.education') },
     { id: 'projects', name: t('nav.projects') },
     { id: 'skills', name: t('nav.skills') },

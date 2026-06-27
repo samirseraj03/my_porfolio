@@ -78,7 +78,12 @@ const globalStyles = css`
     width: min(90%, 1200px);
     margin-inline: auto;
     padding-inline: ${theme.spacing.md};
+    padding-right: 60px;
     position: relative;
+
+    @media (max-width: ${theme.breakpoints.sm}) {
+      padding-right: ${theme.spacing.md};
+    }
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {

@@ -86,6 +86,7 @@ const TimelineContainer = styled.div`
 
   /* Vertical timeline line */
   &::before {
+    display: none;
     content: '';
     position: absolute;
     left: 20px;
@@ -101,6 +102,7 @@ const TimelineContainer = styled.div`
     );
 
     @media (min-width: ${theme.breakpoints.md}) {
+      display: block;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -109,7 +111,7 @@ const TimelineContainer = styled.div`
 
 const TimelineItem = styled(motion.div) <{ index: number }>`
   position: relative;
-  padding-left: 60px;
+  padding-left: 0;
   padding-bottom: ${theme.spacing.xl};
 
   &:last-child {
@@ -144,7 +146,7 @@ const TimelineDot = styled.div<{ index: number }>`
   border: 3px solid ${theme.colors.primary};
   z-index: 2;
   animation: ${pulseGlow} 3s ease-in-out infinite;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   left: 10px;
@@ -158,6 +160,7 @@ const TimelineDot = styled.div<{ index: number }>`
   }
 
   @media (min-width: ${theme.breakpoints.md}) {
+    display: flex;
     ${({ index }) =>
     index % 2 === 0
       ? `

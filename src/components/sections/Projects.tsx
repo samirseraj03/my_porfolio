@@ -66,6 +66,7 @@ const ProjectCard = styled(motion.div)`
   height: 100%;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 
   &:hover {
     transform: translateY(-5px);
@@ -306,6 +307,13 @@ const Projects = () => {
                 variants={itemVariants}
                 role="listitem"
                 aria-labelledby={`project-title-${project.id}`}
+                onClick={() => {
+                  if (project.liveUrl !== "#") {
+                    window.open(project.liveUrl, "_blank");
+                  } else if (project.githubUrl !== "#") {
+                    window.open(project.githubUrl, "_blank");
+                  }
+                }}
               >
                 <ProjectImage
                   imageUrl={project.image}
@@ -328,6 +336,7 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`View ${project.title} source code on GitHub`}
+                        onClick={(e) => e.stopPropagation()}
                       >
                         <FaGithub aria-hidden="true" />
                         <span className="sr-only">GitHub repository</span>
@@ -340,6 +349,7 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`Visit ${project.title} live site`}
+                        onClick={(e) => e.stopPropagation()}
                       >
                         <FaExternalLinkAlt aria-hidden="true" />
                         <span className="sr-only">Live site</span>

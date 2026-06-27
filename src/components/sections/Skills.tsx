@@ -87,28 +87,38 @@ const SectionTitle = styled(motion.h2)`
 
 const SkillsContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
-  gap: ${theme.spacing.lg};
+  grid-template-columns: repeat(1, 1fr);
+  gap: ${theme.spacing.md};
   width: 100%;
   max-width: 1200px;
   margin-top: ${theme.spacing.lg};
+  padding: 0 ${theme.spacing.md};
 
   @media (min-width: ${theme.breakpoints.md}) {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: ${theme.spacing.xl};
     margin-top: ${theme.spacing.xl};
+    padding: 0;
+    padding-right: 60px;
   }
 `;
 
 const SkillCategory = styled(motion.div)`
   background: ${theme.colors.glass.background};
   backdrop-filter: blur(8px);
-  border-radius: 20px;
-  padding: ${theme.spacing.lg};
+  border-radius: 12px;
+  padding: ${theme.spacing.md};
   transition: all ${theme.transitions.default};
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(255, 255, 255, 0.04);
   height: 100%;
+  overflow: hidden;
+
+  @media (min-width: ${theme.breakpoints.md}) {
+    border-radius: 20px;
+    padding: ${theme.spacing.lg};
+  }
 
   &:hover {
     transform: translateY(-5px);
@@ -118,15 +128,15 @@ const SkillCategory = styled(motion.div)`
 `;
 
 const CategoryTitle = styled.h3`
-  font-size: clamp(1.2rem, 2.5vw, 1.45rem);
-  margin-bottom: ${theme.spacing.lg};
+  font-size: clamp(0.9rem, 2.5vw, 1.45rem);
+  margin-bottom: ${theme.spacing.sm};
   color: ${theme.colors.light};
   display: flex;
   align-items: center;
-  gap: ${theme.spacing.sm};
+  gap: ${theme.spacing.xs};
   font-weight: 600;
   position: relative;
-  padding-bottom: ${theme.spacing.md};
+  padding-bottom: ${theme.spacing.sm};
 
   &::after {
     content: '';

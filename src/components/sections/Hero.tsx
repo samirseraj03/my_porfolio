@@ -29,7 +29,13 @@ const HeroSection = styled.section`
     max-width: 1200px;
     margin: 0 auto;
     width: 95%;
+    padding-right: 60px;
     
+    @media (max-width: ${theme.breakpoints.sm}) {
+      width: 95%;
+      padding-right: 0;
+    }
+
     @media (min-width: ${theme.breakpoints.sm}) {
       width: 90%;
     }
@@ -77,7 +83,8 @@ const Title = styled.h1`
   color: ${theme.colors.light};
   line-height: 1.1;
   letter-spacing: -0.02em;
-  white-space: nowrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 `;
 
 const Subtitle = styled.h2`
