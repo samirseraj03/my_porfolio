@@ -192,6 +192,7 @@ const Projects = () => {
       techStack: ["Ionic", "Angular", "Android", "Mobile App", "Mapbox", "Capacitor"],
       githubUrl: "https://github.com/samirseraj03/mapfont",
       liveUrl: "https://map-font.vercel.app/tabs/fonts",
+      googlePlayUrl: "https://play.google.com/store/apps/details?id=com.mapfont",
     },
     {
       id: 2,
@@ -199,8 +200,8 @@ const Projects = () => {
       description: t('projects.workspace_desc'),
       image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=400",
       techStack: ["Desktop Environment", "Window Management", "Productivity", "JavaScript", "Extension Ubuntu"],
-      githubUrl: "https://github.com/samirseraj03",
-      liveUrl: "#",
+      githubUrl: "https://github.com/samirseraj03/Workspace-Roundtrip",
+      liveUrl: "https://extensions.gnome.org/extension/9574/maximize-roundtrip/",
     },
     {
       id: 3,
@@ -208,17 +209,17 @@ const Projects = () => {
       description: t('projects.dataapi_desc'),
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=400",
       techStack: ["Python", "FastAPI", "Pandas", "REST API"],
-      githubUrl: "https://github.com/samirseraj03",
-      liveUrl: "#",
+      githubUrl: "https://github.com/samirseraj03/DataSimulation",
+      liveUrl: "https://fastapi.samirseraj.com/docs",
     },
     {
       id: 4,
-      title: "Recollir Enquestes (Private)",
+      title: "Recollir Enquestes",
       description: t('projects.encuestas_desc'),
       image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=400",
       techStack: ["PHP", "Backend", "Data Processing", "Laravel", "Html", "CSS3", "TypeScript"],
-      githubUrl: "#",
-      liveUrl: "#",
+      githubUrl: "https://github.com/samirseraj03/RecollirEnquestesEnPHP",
+      liveUrl: "https://laravel.samirseraj.com/home",
     },
     {
       id: 5,
@@ -236,7 +237,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&q=80&w=400",
       techStack: ["Management System", "Logistics", "Full-stack", "Python"],
       githubUrl: "https://github.com/samirseraj03/Gestio_parking",
-      liveUrl: "#",
+      liveUrl: "https://api.samirseraj.com/",
     },
 
     {
